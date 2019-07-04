@@ -71,6 +71,7 @@ export default class Aside extends Component {
             {data.contents.map(content => {
                 // console.log(content)
                 // const haveNums = `${content.nums}`
+                //TODO 做个判断，当content中nums为空 则不渲染对应的nums
                 return(            
               <li key={content.name}>
                 <a href="jjj">{content.name}</a>

@@ -23,7 +23,7 @@ export default class Recommand extends Component {
         },
         {
           type:'zongyi',
-          itemName:'向往的生活》',
+          itemName:'《向往的生活》',
           itemImg:Image4
         }
       ];

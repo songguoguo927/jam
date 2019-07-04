@@ -33,8 +33,8 @@ export default class ArticleList extends Component {
         }
     }
     render(){
-        console.log(this.state.articleList)
-        
+        // console.log(this.state.articleList)
+        //获取文章数据
         return (
             this.state.articleList.map((articleItem,index) => <Article articleItem={this.state.articleList[index]} key={index}/> )
            

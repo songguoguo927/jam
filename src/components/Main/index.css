@@ -1,0 +1,138 @@
+/* 布局 */
+.main{
+    width: 90%;
+    display: grid;
+    grid-template-columns:3fr 7fr; 
+    margin: 0 auto;
+}
+
+/* 样式 */
+.follow-me{
+    background: #62bbc3;
+    padding: 15px 30px;
+}
+
+.main{
+    margin-top: 30px;
+}
+.aside{
+    border-right:1px solid #e6e6e6;
+
+}
+.aside-part{
+    background: #fff;
+    border-bottom:1px solid #e6e6e6;
+    padding: 10px 0 20px 30px; 
+    line-height: 30px;
+    margin-bottom: 10px;
+    box-shadow: 3px 3px 3px #e6e6e6;
+    border-radius:5px; 
+}
+.aside-part img{
+    width: 70px;
+    vertical-align: middle;
+}
+.aside-part h3{
+    font-weight: 500;
+}
+
+.aside-part li a::before{
+    content: "*";
+    font-weight: bolder;
+    margin-right: 6px;
+    color: #663399;
+    vertical-align:sub;
+}
+.recommand{
+    font-size:14px; 
+}
+.recommand-item{
+    margin: 10px auto;
+}
+.recommand .more{
+    background: #663399;
+    color: white;
+    display: inline-block;
+    height: 25px;
+    line-height: 25px;
+    border: 1px solid #e6e6e6;
+    border-radius:15px;
+    opacity: .8; 
+    width: 50px;
+    text-align: center;
+    margin-left: 20px;
+}
+.article{
+    background: #fff;
+    border-bottom:3px solid rgba(102, 51, 123,.6);
+    padding: 10px 10px 20px 30px; 
+    line-height: 30px;
+    margin-left: 20px;
+    margin-bottom: 10px;
+    box-shadow: 3px 3px 3px #e6e6e6;
+    border-radius:5px; 
+}
+.article ul li{
+    display: inline-block;
+    font-size: 13px;
+    margin-right: 10px;
+}
+.block-pagination-wrap ul li{
+    display: inline-block;
+    text-align: center;
+    width: 20px;
+    height: 20px;
+    margin-left: 20px;
+}
+.block-pagination-wrap ul li.active{
+    border-radius: 50%;
+    background:#62bbc3;
+}
+.block-pagination-wrap,.simple-pagination{
+    overflow: hidden;
+}
+.simple-pagination span.total{
+    float: right;
+}
+.simple-pagination ul{
+    float: right;
+    /* word-spacing: 15px; */
+}
+.content{
+    position: relative;
+}
+.block-pagination-wrap{
+    position: absolute;
+    bottom: 20px;
+    right: 10px;
+}
+/*小于737变移动端布局*/
+@media (max-width: 737px){
+    .aside{
+        grid-column-start: span 10;
+    }
+    .content{
+        grid-column-start: span 10;
+
+    }
+    .article{
+        margin-left:unset;
+      }
+      .main{
+        width: 100%;
+      }
+      .block-pagination-wrap{
+          position: unset;
+          display: flex;
+          justify-content: center;
+          margin:40px auto;
+      }
+      .block-pagination-wrap ul li{
+          margin-left:10px;
+      }
+}
+@media (min-width: 737px) and (max-width:1040px) {
+.aside .recommand img{
+    width: 40px;
+}
+}

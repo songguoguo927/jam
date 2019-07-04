@@ -23,8 +23,8 @@ export default class Article extends Component {
             <i className="iconfont icon-biaoqian" />
           </li>
           {/* 渲染标签 */}
-          {this.props.articleItem.tags.map(tag => (
-            <li>{tag}</li>
+          {this.props.articleItem.tags.map((tag,index) => (
+            <li key={index}>{tag}</li>
           ))}
         </ul>
         <p>{this.props.articleItem.shortcut}</p>
