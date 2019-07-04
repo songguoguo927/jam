@@ -30,9 +30,9 @@ export default class Recommand extends Component {
       const recommandItems = datas.map(data =>
        
         {
-          console.log(data)
+          // console.log(data)
           return (
-            <div className={`recommand-item ${data.type}`}>
+            <div className={`recommand-item ${data.type}`} key={data.type}>
             <img src={data.itemImg} alt="haibao" />
             <span>{data.itemName}</span>
           </div>
@@ -44,23 +44,7 @@ export default class Recommand extends Component {
           推荐板:音乐一首--电影一部--书一本--综艺最近<a href="jjj" className="more"
             >more ></a
           >
-          {recommandItems}
-          <div className="recommand-item music">
-            <img src={Image1} alt="haibao" />
-            <span>邓紫棋《光年之外》</span>
-          </div>
-          <div className="recommand-item movie">
-            <img src={Image2} alt="haibao" />
-            <span>《调音师》</span>
-          </div>
-          <div className="recommand-item book">
-            <img src={Image3} alt="haibao" />
-            <span>《javascript高级程序设计》</span>
-          </div>
-          <div className="recommand-item zongyi">
-            <img src={Image4} alt="haibao" />
-            <span>《向往的生活》</span>
-          </div>
+          {recommandItems}          
         </div>
   
         )
