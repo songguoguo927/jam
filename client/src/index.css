@@ -1,0 +1,14 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+li{
+  list-style: none;
+}
+body {
+  background: #f4f4f3;
+  /* font-family: "Rubik", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif; */
+  color: #2e2e2e;
+  font-weight: 300;
+  font-size: 18px;
+}
