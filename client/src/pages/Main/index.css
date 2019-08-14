@@ -1,8 +1,9 @@
+/*负责中间部分的样式和布局*/
 /* 布局 */
 .main{
     width: 90%;
     display: grid;
-    grid-template-columns:3fr 7fr; 
+    grid-template-columns:3fr 8fr; 
     margin: 0 auto;
 }
 

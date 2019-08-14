@@ -2,6 +2,8 @@ This project was bootstrapped with [create-react-app]( https://facebook.github.i
 
 ## Available Scripts
 
+>CMS（Content Management System）
+
 -[ ] 本项目是初步想法，还未全部完成
 
 在本项目client中可以运行以下命令跑起来

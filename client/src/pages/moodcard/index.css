@@ -1,0 +1,136 @@
+
+  .left {
+    float: left;
+  }
+  .right {
+    float: right;
+  }
+  
+  .main-content {
+      display: flex;
+      width: calc(100vw);
+    }
+    aside {
+      flex: 2;
+    }
+    section {
+      flex: 11;
+    }
+  /* @media screen and (min-width:1200px){
+      .main-content {
+          display: flex;
+        }
+        aside {
+          flex: 2;
+        }
+        section {
+          flex: 11;
+        }
+  } */
+  /* @media screen and (max-width:768px){
+      .main-content {
+          display: grid;
+          grid-template-columns: 1fr;
+        }
+        
+  } */
+  .list-group a {
+    display: block;
+    color: #555;
+    text-decoration: none;
+    border: 1px solid #ddd;
+    margin-bottom: -1px;
+    padding: 10px 15px;
+  }
+  .list-group a.active {
+    background: #337ab7;
+    color: white;
+  }
+  
+  #sidenav {
+    float: right;
+    margin-right: 20px;
+  }
+  
+  /* 卡片样式 */
+  #moodCard-container {
+    width: calc(79vw);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  /* @media screen and (min-width:768px){
+      #moodCard-container {
+          width: calc(79vw);
+          display: grid;
+          grid-template-columns: 1fr;
+        }
+  }*/
+  #moodCard-container .dailyMood { 
+    width: 370px;
+    box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.08);
+    border-radius: 4px;
+    border: 1px solid #eee;
+    overflow: hidden;
+      margin-right:10px; 
+    padding: 20px;
+  }
+  .title {
+    text-align: center;
+    margin: 0 auto;
+    width: 80%;
+  }
+  hr {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border: 0;
+    border-top: 1px solid #eee;
+  }
+  .icon_img {
+    width: 22px;
+    vertical-align: middle;
+  }
+  .moodCard-content p {
+    text-indent: 5px;
+  }
+  .moodCard-tag {
+    color: gray;
+    font-size: 1.2em;
+    float: right;
+  }
+  /* Tooltip 容器 */
+  .tip {
+    position: relative;
+    display: inline-block;
+    /*border-bottom: 1px dotted black;  悬停元素上显示点线 */
+  }
+  
+  /* Tooltip 文本 */
+  .tip .tiptext {
+    font-size: 0.5em;
+    visibility: hidden;
+    width: 100px;
+    background-color: white;
+    color: #000;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+    /* 定位 */
+    position: absolute;
+    left: 0;
+  bottom: -28px;
+  }
+  /* 鼠标移动上去后显示提示框 */
+  .tip:hover .tiptext {
+    visibility: visible;
+  }
+  .tip .tiptext::after {
+    content: " ";
+    position: absolute;
+    bottom: 100%; /* 提示工具头部 */
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent white transparent;
+  }
+  
