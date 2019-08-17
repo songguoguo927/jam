@@ -8,7 +8,6 @@ font-weight:500;
 text-align:center;
 min-height: calc(80vmin);
 line-height: calc(80vmin);
-
 `;
 const NotFound = () => {
     return ( 
