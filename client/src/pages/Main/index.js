@@ -1,8 +1,10 @@
-//main.js负责组织aside和articlelist的内容渲染 整合
+//main.js负责组织主页的aside和articlelist和Lunbo的内容渲染 整合
 import React, { Component } from "react";
 import Aside from "../../components/Aside/aside";
 import ArticleList from "../../components/ArticleList";
 import { Link} from 'react-router-dom';
+import Lunbo from "../../components/Lunbo";
+
 import "./index.css";
 export default class Main extends Component {
   constructor(props){
@@ -28,6 +30,8 @@ export default class Main extends Component {
   render() {
     
     return (
+      <>{/**替代一个占位符 */}
+      <Lunbo />
       <div className="main">
         <Aside />
         <div className="content">
@@ -66,6 +70,7 @@ export default class Main extends Component {
           </div>
         </div>
       </div>
+      </>
     );
   }
 }

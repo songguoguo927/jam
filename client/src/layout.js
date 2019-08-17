@@ -1,7 +1,6 @@
 //layout.js规划整个页面布局，头部，lunbo，尾部固定不动；中间部分根据路由进行填充相应的内容
 import React from "react";
 import Header from "./components/Header";
-import Lunbo from "./components/Lunbo";
 import Footer from "./components/Footer";
 
 export default function Layout(props) {
@@ -9,7 +8,6 @@ export default function Layout(props) {
 
     <div className="container-all">
       <Header />
-      <Lunbo />
       {props.children}
       <Footer />
     </div>

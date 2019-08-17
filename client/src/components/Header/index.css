@@ -63,7 +63,7 @@
   .menu-list-content {
     display: flex;
   }
-  section {
+  .navbar-section {
     display: grid;
     grid-template-columns:1fr 4fr 2fr; 
     text-align: center; 

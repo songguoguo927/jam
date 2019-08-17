@@ -2,7 +2,8 @@
 import React, { Component } from "react";
 import Layout from "./layout";
 import Main from "./pages/Main";
-import Mood from "./pages/moodcard"
+import Moodcard from "./pages/moodcard";
+import Error from './pages/404';
 import { BrowserRouter as Router, Route } from "react-router-dom";
 
 class App extends Component {
@@ -27,7 +28,11 @@ class App extends Component {
         {/* <p className="APP-intro">{this.state.apiResponse}</p> */}
         <Layout>
         <Route path="/" exact component={Main}></Route>
-        <Route path="/moodcard/" exact component={Mood}></Route>
+        <Route path="/moodcard/" exact component={Moodcard}></Route>
+        <Route path="/books/" exact component={Error}></Route>
+        <Route path="/article/" exact component={Error}></Route>
+        <Route path="/resource/" exact component={Error}></Route>
+        <Route path="/skill/" exact component={Error}></Route>
         </Layout>
       </div>
     </Router>
