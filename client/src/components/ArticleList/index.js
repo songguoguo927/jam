@@ -1,3 +1,4 @@
+//此文件用于组织主页的文章卡片简介
 import React,{Component} from 'react';
 import Article from './article'
 export default class ArticleList extends Component {
@@ -18,9 +19,7 @@ export default class ArticleList extends Component {
                     ，它的返回值可以模仿 willunmount CLASSNaclassName组件生命周期模拟
                     "模仿生命周期，useEffect第二个参数传个空数组，无依赖，只执行一次，相当于didmount。如果要区分生命周期，不传第二个参数，每次都会跑，相当于didupdate。加个mount标记一下，里面用if判断一下，即可以达到模拟生命周期的效果"
                     很多人都会想到这个办法模拟，于是我们试一下看看： let mount;
-                    再谈javascriptjs原型与原型链及继承相关问题
-                    再谈编程范式—程序语言背后的思想 微信小程序之SelectorQuery
-                    浮点数精度问题透析:小数计算不准确+浮点数精度丢失根源`
+                  `
                 },
                 {
                     title:'第二篇文章标题--父子组件通信',
@@ -34,10 +33,10 @@ export default class ArticleList extends Component {
     }
     render(){
         // console.log(this.state.articleList)
+        const {articleList} = this.state;
         //获取文章数据
         return (
-            this.state.articleList.map((articleItem,index) => <Article articleItem={this.state.articleList[index]} key={index}/> )
-           
+            articleList.map((articleItem,index) => <Article articleItem={articleItem} key={index}/> )        
         )
     }
 }

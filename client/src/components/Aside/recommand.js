@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import Image1 from "./Image/music.jpg";
 import Image2 from "./Image/movie.jpg";
 import Image3 from "./Image/book.jpg";
@@ -37,8 +37,8 @@ const Recommand = function(props) {
   });
   return (
     <div className="recommand aside-part">
-      推荐板:音乐一首--电影一部--书一本--综艺最近
-      <a href="jjj" className="more">
+      推荐板:最近音乐-电影-书-综艺
+      <a href="more" className="more">
         more >
       </a>
       {recommandItems}

@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import Recommand from "./recommand";
 const Aside=function (props){
  
@@ -69,13 +69,14 @@ const Aside=function (props){
 
           <ul>
             {data.contents.map(content => {
-                // console.log(content)
-                // const haveNums = `${content.nums}`
-                //TODO 做个判断，当content中nums为空 则不渲染对应的nums
                 return(            
               <li key={content.name}>
                 <a href="jjj">{content.name}</a>
-              <span className="nums"> {`${content.nums}`==null ?  '' :`(${content.nums})` }</span> 
+              <span className="nums">
+                 {
+                `${content.nums}`==='null' ?  ' ' :`(${content.nums})`
+                 }
+              </span> 
               </li>
                 )
             }

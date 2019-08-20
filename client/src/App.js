@@ -2,11 +2,10 @@
 import React, { Component } from "react";
 import Layout from "./layout";
 import Main from "./pages/Main";
-import Moodcard from "./pages/moodcard";
-import Resource from "./pages/Resource"
 import Error from './pages/404';
 import { BrowserRouter as Router, Route } from "react-router-dom";
 
+import { asyncComponent, load } from "./utils";
 class App extends Component {
   constructor(props) {
     super(props);
@@ -28,12 +27,12 @@ class App extends Component {
       <div className="App" style={{ minWidth: `378px` }}>
         {/* <p className="APP-intro">{this.state.apiResponse}</p> */}
         <Layout>
-        <Route path="/" exact component={Main}></Route>
-        <Route path="/moodcard/" exact component={Moodcard}></Route>
-        <Route path="/books/" exact component={Error}></Route>
-        <Route path="/article/" exact component={Error}></Route>
-        <Route path="/resource/" exact component={Resource}></Route>
-        <Route path="/skill/" exact component={Error}></Route>
+        <Route path="/jam" exact component={Main}></Route>
+        <Route path="/jam/moodcard/" exact component={asyncComponent(()=>load('./pages/moodcard'))}/>
+        <Route path="/jam/books/" exact component={Error}></Route>
+        <Route path="/jam/article/" exact component={Error}></Route>
+        <Route path="/jam/resource/" exact component={asyncComponent(()=>load('./pages/Resource'))}/>
+        <Route path="/jam/skill/" exact component={Error}></Route>
         </Layout>
       </div>
     </Router>

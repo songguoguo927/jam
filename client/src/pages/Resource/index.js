@@ -19,7 +19,12 @@ const ListGroup = styled.div`
 `;
 const Aside = styled.div`
   width: calc(100vmin);
-    margin: 20px auto;;
+    margin: 20px auto;
+    
+.icon_img {
+  width: 22px;
+  vertical-align: middle;
+}
 `;
 
 const Resource = () => {

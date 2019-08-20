@@ -10,16 +10,11 @@ export default class Header extends Component {
     super(props);
     this.state = {
       navbarMenu: [
-        { path: "/skill/", title: "Learn 技能", exact: false, component: "" },
-        { path: "/books/", title: "Books 书单", exact: false, component: "" },
-        { path: "/moodcard/", title: "心情卡片", exact: false, component: "" },
-        { path: "/article/", title: "文章", exact: true, component: "" },
-        {
-          path: "/resource/",
-          title: "Resources 学习",
-          exact: true,
-          component: ""
-        }
+        { path: "/jam/skill/", title: "技能", exact: false, component: "" },
+        { path: "/jam/books/", title: "书单", exact: false, component: "" },
+        { path: "/jam/moodcard/", title: "心情卡片", exact: false, component: "" },
+        { path: "/jam/article/", title: "文章", exact: true, component: "" },
+        { path: "/jam/resource/", title: "学习资料", exact: true, component: "" }
       ]
     };
   }
@@ -28,7 +23,7 @@ export default class Header extends Component {
       <div className="container">
         <header className="navbar header">
           <section className="navbar-section">
-            <Link to="/" className="navbar-brand logo">
+            <Link to="/jam/" className="navbar-brand logo">
               <img width="66px" src={jamLogo} alt="" />
             </Link>
 
