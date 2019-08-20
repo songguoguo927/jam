@@ -3,6 +3,7 @@ import React, { Component } from "react";
 import Layout from "./layout";
 import Main from "./pages/Main";
 import Moodcard from "./pages/moodcard";
+import Resource from "./pages/Resource"
 import Error from './pages/404';
 import { BrowserRouter as Router, Route } from "react-router-dom";
 
@@ -31,7 +32,7 @@ class App extends Component {
         <Route path="/moodcard/" exact component={Moodcard}></Route>
         <Route path="/books/" exact component={Error}></Route>
         <Route path="/article/" exact component={Error}></Route>
-        <Route path="/resource/" exact component={Error}></Route>
+        <Route path="/resource/" exact component={Resource}></Route>
         <Route path="/skill/" exact component={Error}></Route>
         </Layout>
       </div>

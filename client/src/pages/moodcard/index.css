@@ -9,20 +9,7 @@
   margin: 0 auto;
   min-height: calc(80vmin);
 }
-.list-group {
-  background: #333;
-}
-.list-group a {
-  display: block;
-  color: hsla(61, 90%, 48%, 0.931);
-  text-decoration: none;
-  margin-bottom: -1px;
-  padding: 10px 15px;
-}
-.list-group a.active {
-  background: hsla(70, 71%, 58%, 0.931);
-  color: black;
-}
+
 .cardSection {
   margin: 30px auto;
   display: grid;
@@ -36,11 +23,6 @@
     display: grid;
     grid-template-columns: 1fr;
   }
-}
-
-#sidenav {
-  float: right;
-  margin-right: 20px;
 }
 
 .icon_img {

@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import Recommand from "./recommand";
-export default class Aside extends Component {
-  render(props) {
+const Aside=function (props){
+ 
     const datas = [
       {
         type: "category",
@@ -96,4 +96,5 @@ export default class Aside extends Component {
       </div>
     );
   }
-}
+
+export default  Aside;

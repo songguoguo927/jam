@@ -1,53 +1,36 @@
-/* footer */
-footer {
-    min-width: 378px;
-    color: #999;
-    background-color: #333;
-    box-shadow: inset 0px -1px 0px 0 rgba(0, 0, 0, 0.1);
-    text-align: center;
-    padding: 10px;
-    height: 290px; /*590*/
-    font-size: 13px;
-    display: flex;
-    align-items:center;
-  }
-  .footer-container{
-    margin: 0 auto;
-  }
-  .contact {
-    word-spacing: 20px;
-  }
-  i {
-    display: inline-block;
-    vertical-align: middle;
-    margin-right: 7px;
-  }
-  i.iconfont{
-    vertical-align: baseline;
-  }
-  .bg-weixin {
-    width: 16px;
-    height: 16px;
-    background: url("./css_sprites.png") -84px -10px;
-  }
-  .bg-weibo {
-    width: 16px;
-    height: 16px;
-    background: url("./css_sprites.png") -46px -46px;
-  }
-  
-  .bg-wangyiyun {
-    width: 16px;
-    height: 16px;
-    background: url("./css_sprites.png") -10px -46px;
-  }
-  .bg-heart {
-    width: 18px;
-    height: 16px;
-    background: url("./css_sprites.png") -10px -10px;
-  }
-  .bg-bilibili {
-    width: 16px;
-    height: 16px;
-    background: url("./css_sprites.png") -84px -46px;
-  }
+/* 图标样式 */
+
+i {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 7px;
+}
+i.iconfont {
+  vertical-align: baseline;
+}
+.bg-weixin {
+  width: 16px;
+  height: 16px;
+  background: url("./css_sprites.png") -84px -10px;
+}
+.bg-weibo {
+  width: 16px;
+  height: 16px;
+  background: url("./css_sprites.png") -46px -46px;
+}
+
+.bg-wangyiyun {
+  width: 16px;
+  height: 16px;
+  background: url("./css_sprites.png") -10px -46px;
+}
+.bg-heart {
+  width: 18px;
+  height: 16px;
+  background: url("./css_sprites.png") -10px -10px;
+}
+.bg-bilibili {
+  width: 16px;
+  height: 16px;
+  background: url("./css_sprites.png") -84px -46px;
+}

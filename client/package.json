@@ -2,6 +2,7 @@
   "name": "jam",
   "version": "0.1.0",
   "private": true,
+  "homepage":".",
   "dependencies": {
     "graphql": "^14.4.2",
     "react": "^16.8.6",
