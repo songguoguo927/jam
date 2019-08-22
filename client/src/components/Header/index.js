@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import bottomArrow from "./bottom-arrow.png";
-import { Link } from "react-router-dom";
+import { Link,NavLink } from "react-router-dom";
 
 import "./index.css";
 
@@ -10,11 +10,11 @@ export default class Header extends Component {
     super(props);
     this.state = {
       navbarMenu: [
-        { path: "/jam/skill/", title: "技能", exact: false, component: "" },
-        { path: "/jam/books/", title: "书单", exact: false, component: "" },
-        { path: "/jam/moodcard/", title: "心情卡片", exact: false, component: "" },
-        { path: "/jam/article/", title: "文章", exact: true, component: "" },
-        { path: "/jam/resource/", title: "学习资料", exact: true, component: "" }
+        { path: "/skill", title: "技能", exact: false, component: "" },
+        { path: "/books", title: "书单", exact: false, component: "" },
+        { path: "/moodcard", title: "心情卡片", exact: false, component: "" },
+        { path: "/article", title: "文章", exact: true, component: "" },
+        { path: "/resource", title: "学习资料", exact: true, component: "" }
       ]
     };
   }
@@ -23,7 +23,7 @@ export default class Header extends Component {
       <div className="container">
         <header className="navbar header">
           <section className="navbar-section">
-            <Link to="/jam/" className="navbar-brand logo">
+            <Link to="/" className="navbar-brand logo">
               <img width="66px" src={jamLogo} alt="" />
             </Link>
 
@@ -114,9 +114,9 @@ export default class Header extends Component {
               {this.state.navbarMenu.map((item, index) => {
                 return (
                   <li key={index}>
-                    <Link to={item.path} className="navbar-menu">
+                    <NavLink to={item.path} className="navbar-menu" exact activeStyle={{color:'#62bbc3'}}>
                       {item.title}
-                    </Link>
+                    </NavLink>
                   </li>
                 );
               })}
