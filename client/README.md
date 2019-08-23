@@ -28,6 +28,8 @@ Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
+解决BrowserRouter 部署后刷新404的问题
+
 `npm run eject`
 
 **Note:该操作不可逆**

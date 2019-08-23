@@ -1,8 +1,8 @@
-import React from 'react';
+import React,{Component} from 'react';
 
 // 异步按需加载component
 export function asyncComponent(getComponent) {
-    return class AsyncComponent extends React.Component {
+    return class AsyncComponent extends Component {
         static Component = null;
         state = { Component: AsyncComponent.Component };
 
