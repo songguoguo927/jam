@@ -3,7 +3,7 @@ import React, { Component } from "react";
 import Layout from "./layout";
 import Main from "./pages/Main";
 import Error from "./pages/404";
-import ScrollToTop from './ScolltoTop'
+import ScrollToTop from './utils/ScolltoTop'
 import {
   BrowserRouter as BRouter,
   Route,
@@ -11,7 +11,7 @@ import {
   Redirect
 } from "react-router-dom";
 
-import { asyncComponent, load } from "./utils";
+import { asyncComponent, load } from "./utils/utils";
 class Router extends Component {
   constructor(props) {
     super(props);
@@ -28,9 +28,9 @@ class Router extends Component {
   //   this.callAPI()
   // }
   render() {
-    const isProd = process.env.REACT_APP_ENV === 'production';
+    // const isProd = process.env.REACT_APP_ENV === 'production';
     return (
-      <BRouter basename={isProd ? '/jam' : '/'}>
+      <BRouter basename='/jam'>
         <ScrollToTop>
         <div className="App" style={{ minWidth: `378px` }}>
           {/* <p className="APP-intro">{this.state.apiResponse}</p> */}
